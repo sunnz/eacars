@@ -30,3 +30,8 @@ If the API endpoint is up and running, you would see a list of the models of car
 grouped by make alphabetically.
 
 In the event where the API fails or returns an empty result, or if you lost network connectivity, you would see an custom error page.
+
+# System requirements
+
+* PHP 7 (developed on PHP 7.2.7)
+* Composer
