@@ -37,3 +37,11 @@ In the event where the API fails or returns an empty result, or if you lost netw
 * Composer - handles all the PHP library dependencies
   * Guzzle PHP library is used for HTTP API request, so the PHP installation and configuration must satisify all the requirements
     of Guzzle, see: http://docs.guzzlephp.org/en/stable/overview.html#requirements
+
+## Implementation
+
+The majority of the logic can be found in [``src/Controller/CarMakeController.php``](https://github.com/sunnz/eacars/blob/master/src/Controller/CarMakeController.php).
+
+``homepage()`` and ``test()`` handles routes ``/`` and ``/test``. Then a JSON object is requested, either via the API with Guzzle or from a locally hardcoded value, then it is passed to ``getRenderMakeCarShowsMap()``, which organises the data in the format and order accordingly. 
+
+Finally the result is passed to [``templates/show.html.twig``](https://github.com/sunnz/eacars/blob/master/templates/show.html.twig) for rendering. Bootstrap is used to display the data neatly in a responsive grid.
