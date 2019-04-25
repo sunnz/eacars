@@ -33,5 +33,7 @@ In the event where the API fails or returns an empty result, or if you lost netw
 
 ## System requirements
 
-* PHP 7 (developed on PHP 7.2.7)
-* Composer
+* PHP 7 - developed on PHP 7.2.7
+* Composer - handles all the PHP library dependencies
+  * Guzzle PHP library is used for HTTP API request, so the PHP installation and configuration must satisify all the requirements
+    of Guzzle, see: http://docs.guzzlephp.org/en/stable/overview.html#requirements
